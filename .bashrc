@@ -26,18 +26,16 @@ alias la="ls -laFG"
 
 # Ask before removing files
 alias rm='rm -i'
-
 # Search history. Example usage: `histg git` to recent commands that use git
 alias histg="history | grep"
-
 # Get your current IP
 alias myip="curl http://ipecho.net/plain; echo"
-
 # Example alias for SSH'ing into a server
 alias myserver="ssh wetsheep@192.168.8.111"
-
 # Example alias for quickly getting to a commonly used directory
-alias docs='cd ~/Documents/PC/User/Matas/Documents/Current\ projects'
+alias docs='cd ~/Documents/CP'
+# print cpu spec
+alias cpu='lscpu'
 
 alias pac="sudo pacman -Syu"
 alias up='cd ..'
@@ -92,3 +90,5 @@ export PS1="${ps1_dir}${ps1_git}\$ "
 # MOTD (Message of the Day)
 # What you see when Terminal opens
 # ------------------------------------
+cd
+neofetch
