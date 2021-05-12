@@ -1,12 +1,18 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
-
+clear
 cd
 # ------------------------------------
 # ALIASES
 # ------------------------------------
 # Edit .bashrc
 alias bashedit='nvim ~/.bashrc'
+
+export ROOT="/data/data/com.termux/files"
+export SCRIPTS="$ROOT/home/Scripts"
+export PATH="$ROOT/usr/bin:$ROOT/usr/bin/applets"
+
+
 
 # Force terminal to recognize changes to .bashrc
 alias bashre='source ~/.bashrc'
@@ -25,7 +31,7 @@ alias la="ls -laFG"
 # -a = Show hidden files
 
 # Ask before removing files
-alias rm='rm -i'
+#alias rm='rm -i'
 # Search history. Example usage: `histg git` to recent commands that use git
 alias histg="history | grep"
 # Get your current IP
@@ -37,12 +43,15 @@ alias docs='cd ~/Documents/CP'
 # print cpu spec
 alias cpu='lscpu'
 
+alias ssh2tower='ssh 83.176.192.75 -p 5432'
+
 alias pac="sudo pacman -Syu"
 alias up='cd ..'
 alias pacman='sudo pacman'
 alias cls='clear'
 alias c='clear'
 alias apt='sudo apt'
+alias manjaro='cd & ./start-manjaro.sh'
 
 # ------------------------------------
 # Color variables
