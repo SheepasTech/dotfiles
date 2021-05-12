@@ -37,13 +37,12 @@ alias histg="history | grep"
 # Get your current IP
 alias myip="curl http://ipecho.net/plain; echo"
 # Example alias for SSH'ing into a server
-alias myserver="ssh wetsheep@192.168.8.111"
+alias myserver="ssh wetsheep@iphere"
 # Example alias for quickly getting to a commonly used directory
 alias docs='cd ~/Documents/CP'
 # print cpu spec
 alias cpu='lscpu'
 
-alias ssh2tower='ssh 83.176.192.75 -p 5432'
 
 alias pac="sudo pacman -Syu"
 alias up='cd ..'
